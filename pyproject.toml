@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "mlopspyne"
+version = "0.1.0"
+description = ""
+authors = ["Marcos Jacinto <marcos.jacinto@geowellex.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^2.2.2"
+matplotlib = "^3.9.1.post1"
+ipykernel = "^6.29.5"
+seaborn = "^0.13.2"
+scikit-learn = "^1.5.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
