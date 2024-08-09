@@ -6,13 +6,19 @@ authors = ["Marcos Jacinto <marcos.jacinto@geowellex.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = ">=3.9,<3.13"
 pandas = "^2.2.2"
-matplotlib = "^3.9.1.post1"
 ipykernel = "^6.29.5"
 seaborn = "^0.13.2"
 scikit-learn = "^1.5.1"
+mlflow = "2.7.1"
+torch = {version = "2.3.0", source = "pytorch-cpu"}
+frouros = "^0.8.0"
 
+[[tool.poetry.source]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+priority = "supplemental"
 
 [build-system]
 requires = ["poetry-core"]
