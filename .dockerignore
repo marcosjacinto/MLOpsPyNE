@@ -1,0 +1,15 @@
+FROM python:3.10.14-slim
+
+.venv/*
+*.db
+
+WORKDIR /app
+
+COPY . .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# expose port
+EXPOSE 8888
+
+# run jupyter lab
+CMD ["jupyter", "lab"]
